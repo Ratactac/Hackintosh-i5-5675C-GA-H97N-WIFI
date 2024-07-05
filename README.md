@@ -62,15 +62,16 @@ Dual boots Windows 11 and macOS Monterney.
 
 * Vt-D activated    -> disableIOmapper is enabled.
 
-* ## To adapt Framebuffer for Haswell CPU or Broadwell, Determine family of your cpu > Patching Guide & setting important iGPU properties : 
-[WhateverGreen's Framebuffer Patching Guide](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md)
+* To adapt Framebuffer for Haswell CPU or Broadwell, Determine family of your cpu > Patching Guide & setting important iGPU properties : 
 
 According of your family and choice, open OCAuxiliaryTools and the EFI/OC/config.plist. Go to DP > Add > PciRoot(0x0)/Pci(0x2,0x0) > Change AAPL,ig-platform-id value "07002216" :
 
-Haswell, AAPL,ig-platform-id is 04001204, for dGpu + iGpu.
-Haswell, AAPL,ig-platform-id is 0300220D, for iGpu only.
+Haswell, AAPL,ig-platform-id is 04001204, for dGpu (amd) + iGpu computing tasks.
+Haswell, AAPL,ig-platform-id is 0300220D, for iGpu display & computing tasks.
 
-Broadwell, AAPL,ig-platform-id is 07002216 for iGpu only.
+Broadwell, AAPL,ig-platform-id is 07002216, for iGpu drive display & computing tasks.
+
+[More info > WhateverGreen's Framebuffer Patching Guide](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md)
 
 ## Note Usb Map 
 
