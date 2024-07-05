@@ -1,7 +1,7 @@
 # Hackintosh MacOS Monterney 12.0.0 - Intel i5 5675C + GigaByte GA H97N-Wifi
 
 
-![https://github.com/Ratactac/Hackintosh-i5-5675C-GA-H97N-WIFI/blob/main/images.jpeg](https://github.com/Ratactac/Hackintosh-i5-5675C-GA-H97N-WIFI/blob/main/images.jpeg)
+![https://github.com/Ratactac/Hackintosh-i5-5675C-GA-H97N-WIFI/blob/main/Untitled-1.jpg](https://github.com/Ratactac/Hackintosh-i5-5675C-GA-H97N-WIFI/blob/main/Untitled-1.jpg)
 
 ## OpenCore 1.0.0  - Kext Updated July 2024
 
