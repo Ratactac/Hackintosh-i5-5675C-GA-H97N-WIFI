@@ -5,7 +5,7 @@
 
 ## OpenCore 1.0.0  - Kext Updated July 2024
 
-This is my own clean EFI for H97N-Wifi created by zero, and for my Broadwell Cpu. Not for Haswell. Fully working for my condition. I have following the Elite Guide, and Dortania. It includes some features below. Use it responsibly. Change Graphics if you have haswell CPU. Add your own Smbios close of your build ( CPU, iGPU). Usb map is ok.
+This is my own clean EFI for H97N-Wifi created by zero, and for my Broadwell Cpu. Not ready for Haswell. Adapt method is explain below. Fully working for my condition. I have following the Elite Guide, and Dortania. It includes some features below. Use it responsibly. Add your own Smbios close of your build ( CPU, iGPU). Usb map is ok.
 
 ## macOS: 12.0.0 - Smbios 16,2 (i5-5675R same to my 5675C CPU)
 Dual boots Windows 11 and macOS Monterney.
