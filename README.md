@@ -5,7 +5,7 @@
 
 ## OpenCore 1.0.0  - Kext Updated July 2024
 
-This is my own clean EFI for H97N-Wifi created by zero, and for my Broadwell Cpu. Not ready for Haswell. Adapt method is explain below. Fully working for my condition. I have following the Elite Guide, and Dortania. It includes some features below. Use it responsibly. Add your own Smbios close of your build ( CPU, iGPU). Usb map is ok.
+This is my own clean EFI for H97N-Wifi created by zero, and for my Broadwell Cpu. Not ready for Haswell. Adapted method is explain below. Fully working for my condition. I have following the Elite Guide, and Dortania. It includes some features below. Use it responsibly. Add your own Smbios close of your build ( CPU, iGPU). Usb map is ok.
 
 ## macOS: 12.0.0 - Smbios 16,2 (i5-5675R same to my 5675C CPU)
 Dual boots Windows 11 and macOS Monterney.
@@ -62,7 +62,7 @@ Dual boots Windows 11 and macOS Monterney.
 
 * Vt-D activated    -> disableIOmapper is enabled.
 
-* To adapt Framebuffer for Haswell CPU, Determine family of your cpu > Patching Guide & setting important iGPU properties : 
+* To adapt Framebuffer Video for Haswell CPU, Determine family of your cpu > Patching Guide & setting important iGPU properties : 
 Google > Ark intel + name of your Cpu. Note your code name + iGpu name.
 
 If you have Haswell, & according of your Igpu and your choice, open OCAuxiliaryTools and open with EFI/OC/config.plist. Go to DP > Add > PciRoot(0x0)/Pci(0x2,0x0) > Change AAPL,ig-platform-id broadwell value "07002216" :
