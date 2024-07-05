@@ -40,21 +40,20 @@ Dual boots Windows 11 and macOS Monterney.
 + Memory XMP Profile 1: Enabled (if supported by RAM)
 
 ## BIOS Features
-+ Fast Boot	Disabled
-+ VT-d	Enabled
-+ Windows 8 Features	Windows 8 WHQL
-+ CSM Support	Never
-+ Secure Boot	Disabled
++ Fast Boot = 	Disabled
++ VT-d =  Enabled
++ Windows 8 Features =	Windows 8 WHQL
++ CSM Support = 	Never
++ Secure Boot = 	Disabled
 
 ## Peripherals
-+ Field	Value
-+ XHCI Mode	Enabled
-+ Intel Processor Graphics	Enabled
-+ Intel Processor Graphics Memory Allocation	96M*
-+ DVMT Total Memory Size	MAX
-+ Legacy USB Support	Disabled
-+ XHCI Handoff	Enabled
-+ Super IO Configuration → Serial Port A	Disabled
++ XHCI Mode = 	Enabled
++ Intel Processor Graphics =	Enabled
++ Intel Processor Graphics Memory Allocation =  96M*
++ DVMT Total Memory Size =  MAX
++ Legacy USB Support =	Disabled
++ XHCI Handoff =	Enabled
++ Super IO Configuration → Serial Port A =	Disabled
           
 ## Note EFI
 
