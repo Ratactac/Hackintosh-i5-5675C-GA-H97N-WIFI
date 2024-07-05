@@ -1,17 +1,17 @@
-# Hackintosh MacOS Monterney 12.0.0 - Intel i5 5675C + GigaByte GA H97N-Wifi
+# Hackintosh MacOS Monterney 12.0.0 - Intel i5 5675C (Broadwell) + GigaByte GA H97N-Wifi
 
 
 ![https://github.com/Ratactac/Hackintosh-i5-5675C-GA-H97N-WIFI/blob/main/Untitled-1.jpg](https://github.com/Ratactac/Hackintosh-i5-5675C-GA-H97N-WIFI/blob/main/Untitled-1.jpg)
 
 ## OpenCore 1.0.0  - Kext Updated July 2024
 
-This is my own clean EFI for H97N-Wifi created by zero. Fully working for my condition. I have following the Elite Guide, and Dortania. It includes some features below. Use it responsibly. Add your own Smbios close of your build ( CPU, iGPU). Usb map is ok.
+This is my own clean EFI for H97N-Wifi created by zero, and my Broadwell Cpu. Fully working for my condition. I have following the Elite Guide, and Dortania. It includes some features below. Use it responsibly. Change Graphics if you have haswell CPU. Add your own Smbios close of your build ( CPU, iGPU). Usb map is ok.
 
-## macOS: 12.0.0 - Smbios 16,2 (i5-5675R same as mine CPU)
+## macOS: 12.0.0 - Smbios 16,2 (i5-5675R same to my 5675C CPU)
 Dual boots Windows 11 and macOS Monterney.
 
 ## Complete hardware specs:
-  + CPU: Intel i5 5675C
+  + CPU: Intel i5 5675C ( Broadwell )
   + Motherboard: GigaByte H97N-Wifi
   + GPU: Internal Gpu ( Iris 6200 )
   + Wifi Works.
@@ -25,7 +25,7 @@ Dual boots Windows 11 and macOS Monterney.
       + 500GB Sangung SSD 860 evo PCIe SSD ( Windows )
 
 ## What's Works
-+ Accelerated graphics on supported Intel IGPUs and AMD GPUs
++ Accelerated graphics on supported Intel Broadwell IGPUs. Adapt if you are using Haswell Cpu.
 + Audio ( ALC892 ) ( alcid=1, changing layout if any problem -> layout 1, 2, 3, 4, 5, 7, 11, 12, 15, 16, 17, 18, 20, 22, 23, 28, 31, 32, 90, 92, 97, 99, 100 ) 
 + 2 ethernet differents ports works, one use AtherosE2200Ethernet, other RealtekRTL8111.
 + Wifi working with [itlwm installed](https://github.com/OpenIntelWireless/itlwm/releases) & [Heliport Wifi app](https://github.com/OpenIntelWireless/HeliPort/releases) , you have to install it on MacOs, cause you cant use wifi app from macos.
@@ -54,12 +54,23 @@ Dual boots Windows 11 and macOS Monterney.
 + Legacy USB Support =	Disabled
 + XHCI Handoff =	Enabled
 + Super IO Configuration → Serial Port A =	Disabled
+
           
 ## Note EFI
 
-Cfg lock Disabled not available in motherboard ->  AppleCpuPmCfgLock & AppleXcpmCfgLock is check in config.plist Kernel > Quirks .
+* Cfg lock Disabled not available in motherboard ->  AppleCpuPmCfgLock & AppleXcpmCfgLock is check in config.plist Kernel > Quirks .
 
-Vt-D activated    -> disableIOmapper is enabled.
+* Vt-D activated    -> disableIOmapper is enabled.
+
+* ## To adapt Framebuffer for Haswell CPU or Broadwell, Determine family of your cpu > Patching Guide & setting important iGPU properties : 
+[WhateverGreen's Framebuffer Patching Guide](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md)
+
+According of your family and choice, open OCAuxiliaryTools and the EFI/OC/config.plist. Go to DP > Add > PciRoot(0x0)/Pci(0x2,0x0) > Change AAPL,ig-platform-id value "07002216" :
+
+Haswell, AAPL,ig-platform-id is 04001204, for dGpu + iGpu.
+Haswell, AAPL,ig-platform-id is 0300220D, for iGpu only.
+
+Broadwell, AAPL,ig-platform-id is 07002216 for iGpu only.
 
 ## Note Usb Map 
 
