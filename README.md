@@ -73,8 +73,8 @@ If you have Haswell, & according of your Igpu and your choice, open OCAuxiliaryT
 
 * Broadwell, AAPL,ig-platform-id is 07002216, for iGpu drive display & computing tasks.
 
-[More info > WhateverGreen's Framebuffer Patching Guide](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md)
-[dortania guide](https://dortania.github.io/OpenCore-Post-Install/gpu-patching/intel-patching/#getting-started)
+* [More info > WhateverGreen's Framebuffer Patching Guide](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md)
+* [dortania guide](https://dortania.github.io/OpenCore-Post-Install/gpu-patching/intel-patching/#getting-started)
 
 ## Note Usb Map 
 
