@@ -36,8 +36,7 @@ Dual boots Windows 11 and macOS Monterney.
 + macOS installation and updates
 + System stability
 
-## Version Bios: F9b
-## BIOS DETAILS
+## BIOS DETAILS Version Bios: F9b
 + Memory XMP Profile 1: Enabled (if supported by RAM)
 
 ## BIOS Features
@@ -47,7 +46,7 @@ Dual boots Windows 11 and macOS Monterney.
 + CSM Support	Never
 + Secure Boot	Disabled
 
-+ ## Peripherals
+## Peripherals
 + Field	Value
 + XHCI Mode	Enabled
 + Intel Processor Graphics	Enabled
@@ -57,8 +56,6 @@ Dual boots Windows 11 and macOS Monterney.
 + XHCI Handoff	Enabled
 + Super IO Configuration → Serial Port A	Disabled
           
-  </details>
-
 ## Note EFI
 
 Cfg lock Disabled not available in motherboard ->  AppleCpuPmCfgLock & AppleXcpmCfgLock is check in config.plist Kernel > Quirks .
