@@ -78,7 +78,7 @@ If you have Haswell, & according of your Igpu and your choice, open OCAuxiliaryT
 
 ## Note Usb Map 
 
-This is my own EFI created by zero with my own Usb Map. Use it responsibly. I think it's pretty clean.
+This is my own EFI created by zero with my own Usb Map. Use it responsibly. I think it's pretty clean. It still has to pass some tests at home. And it will certainly be updated this year. 
   
 ## Tool you need
 
