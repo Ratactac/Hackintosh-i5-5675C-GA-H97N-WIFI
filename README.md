@@ -28,7 +28,7 @@ Dual boots Windows 11 and macOS Monterney.
 + Accelerated graphics on supported Intel Broadwell IGPUs. Adapt if you are using Haswell Cpu. Explain below.
 + Audio ( ALC892 ) ( alcid=1, changing layout if any problem -> layout 1, 2, 3, 4, 5, 7, 11, 12, 15, 16, 17, 18, 20, 22, 23, 28, 31, 32, 90, 92, 97, 99, 100 ) 
 + 2 ethernet differents ports works, one use AtherosE2200Ethernet, other RealtekRTL8111.
-+ Wifi working with [itlwm installed](https://github.com/OpenIntelWireless/itlwm/releases) & [Heliport Wifi app](https://github.com/OpenIntelWireless/HeliPort/releases) , you have to install it on MacOs, cause you cant use wifi app from macos.
++ Wifi working ( but I dont remenber if I've changed my wifi card in the past), [itlwm kext is installed](https://github.com/OpenIntelWireless/itlwm/releases) & You need to install [Heliport Wifi app](https://github.com/OpenIntelWireless/HeliPort/releases) to have kext working and wifi, The native wifi app from macos can't be use.
 + Airport and Bluetooth, are not included, you can install kext -> [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases)
 + USB
 + CPU power management
