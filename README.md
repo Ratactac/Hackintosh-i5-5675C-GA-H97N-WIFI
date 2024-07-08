@@ -58,7 +58,7 @@ Dual boots Windows 11 and macOS Monterney.
           
 ## Note EFI
 
-* Cfg lock Disabled not available in motherboard ->  AppleCpuPmCfgLock & AppleXcpmCfgLock is check in config.plist Kernel > Quirks .
+* Cfg lock Disabled not available in motherboard ->  AppleXcpmCfgLock is check in config.plist Kernel > Quirks .
 
 * Vt-D activated    -> disableIOmapper is enabled.
 
