@@ -62,14 +62,14 @@ Dual boots Windows 11 and macOS Monterney.
 
 * Vt-D activated    -> disableIOmapper is enabled.
 
-* To adapt Framebuffer Video for Haswell CPU, Determine family of your cpu > Patching Guide & setting important iGPU properties : 
-Google > Ark intel + name of your Cpu. Note your code name + iGpu name.
+* To adapt Framebuffer Video for Haswell CPU, You must determine family of your cpu & follow Patching Guide & setting important iGPU properties : 
+first  step is to catch info > Google > Ark intel + name of your Cpu. Note your code name + iGpu name.
 
 If you have Haswell, & according of your Igpu and your choice, open OCAuxiliaryTools and open with EFI/OC/config.plist. Go to DP > Add > PciRoot(0x0)/Pci(0x2,0x0) > Change AAPL,ig-platform-id broadwell value "07002216" :
 
 * Haswell, AAPL,ig-platform-id is 04001204, for dGpu (amd) + iGpu computing tasks.
 * Haswell, AAPL,ig-platform-id is 0300220D, for iGpu display & computing tasks.
-* If only your CPU uses hd 4400 add a new key = Device ID, data, value = 12040000.
+* If only your CPU uses hd 4400 Igpu, add a new key below AAPL,ig-platform-id, > Device ID, data, value = 12040000.
 
 * Broadwell, AAPL,ig-platform-id is 07002216, for iGpu drive display & computing tasks.
 
